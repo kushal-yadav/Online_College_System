@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Contact Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/LogoIcon.png" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/headerFooter.css">		
+	<link rel="stylesheet" type="text/css" media="screen" href="./css/form.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="./js/postLoginoperation.js"></script>
+	
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-md  bg-dark">
+		<a class="navbar-brand logo-top font-weight-bold" href="BootStrapHome.html">University Of Phoenix</a>
+		<button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+		aria-expanded="false" aria-label="Toggle navigation">
+		<i class="fa fa-bars"></i>
+	</button>
+	<div class="collapse navbar-collapse text-center" id="collapsibleNavId">
+		<ul class="navbar-nav mr-auto mt-lg-0 justify-content-center">
+			<li class="nav-item mx-1 my-2 my-md-0">
+				<a class="nav-link" href="BootStrapHome.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item mx-1 my-2 my-md-0">
+				<a class="nav-link" href="about.html">About</a>
+			</li>
+			<li class="nav-item mx-1 my-2 my-md-0">
+				<a class="nav-link" href="gallery2.html">Gallery</a>
+			</li>
+			<li class="nav-item active mx-1 my-2 my-md-0">
+				<a class="nav-link" href="contact.html">Contact</a>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li class="nav-item mx-1 my-2 my-md-0"> <a href="login.html" class="nav-link px-2 mx-2" id="login">Login</a></li>
+			<li class="nav-item mx-1 my-2 my-md-0"> <a href="register.html" class="nav-link button-custom" id="sign-up">Sign-Up</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- Main Body -->
+<div class="form-container" >
+	<div class="background"></div>
+	<form id="contact-send" action="#">
+		
+		<div class="alert alert-success alert-dismissible fade show" role="alert">
+			<button id="close-alert" type="button" class="close" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				<span class="sr-only">Close</span>
+			</button>
+			<strong>Successfully sent!</strong>
+		</div>
+		
+		<h2 id="form-head" align="center">Contact Us</h3>
+			<p>
+				Please fill the details below with your suggestions/queries:
+			</p>
+			<div class="">
+				<label for="">Name</label><br>
+				<input type="text" class=""  id="name" required pattern="^[a-zA-Z]+$" placeholder="Name...">
+			</div>
+			<div class="mt-2">
+				<label for="">E-mail</label><br>
+				<input type="email" class=""  id="email" required  placeholder="abc@xyz.com">
+			</div>
+			<div class="mt-2">
+				<label for="">Message</label><br>
+				<textarea class="w-100" name="" id="message" required cols="30" rows="5"></textarea>
+			</div>
+			<div align="center">
+				<button  type="submit" class="button-custom mt-3 mr-4 py-1 px-5" value="">Send</button><br>
+			</div>
+			
+		</div>
+	</form>
+	<!-- Footer -->
+	<footer>
+		<div class="container-fluid text-center text-md-left">			
+			<div class="row align-items-center">				
+				<div class="col-md-6 mt-md-2 my-3">				
+					<img src="./img/logowhite.png" alt="Logo">					
+				</div>		
+				<div class="col-md-3 px-2 text-center my-md-5">
+					<a href="#"><span class="fa fa-2x fa-facebook px-md-2 px-sm-3"></span></a>
+					<a href="#" class=" mx-md-1 mx-5"><span class="fa fa-2x fa-twitter px-md-2 px-sm-3"></span></a>
+					<a href="#"><span class="fa fa-2x fa-google px-md-2 px-sm-3"></span></a>
+				</div>
+				<hr class="clearfix d-md-none">				
+				<div class="col-md-3 text-right mb-md-0 mb-3">					
+					<h6 class="text-uppercase text-center mt-3">Sitemap</h6>		
+					<ul class="list-unstyled text-center">
+						<li>
+							<a class="text-center" href="BootStrapHome.html">Home</a>
+						</li>
+						<li>
+							<a class="text-center" href="about.html">About</a>
+						</li>
+						<li>
+							<a href="contact.html" class="text-center">Contact</a>
+						</li>
+						<li>
+							<a href="gallery2.html" class="text-center">Gallery</a>
+						</li>
+					</ul>			
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright text-center py-2">© 2018 Copyright:
+			<a href="BootStrapHome.html"> University Of Phoenix</a>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	
+</body>
+</html>

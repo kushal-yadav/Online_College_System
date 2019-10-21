@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gallery</title>
+<link rel="shortcut icon" href="img/LogoIcon.png" />
+
+<!--normal-carousel chi link-->
+<link rel="stylesheet" href="CSS\Gallery.css">
+<script src="js/GalleryOperations.js"></script>
+
+<!-- <link rel="stylesheet" href="./../Mrunmay/footer.css">	 -->
+
+<!-- <link rel="stylesheet" type="text/css" media="screen" href="./../registerFormStyle.css" /> -->
+<!-- nagivation chi css file -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" type="text/css" media="screen" href="footer.css" /> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./css/headerFooter.css">	
+<link rel="stylesheet" type="text/css" media="screen" href="./css/form.css" />
+<!-- majha style sheet -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<!-- <link rel="stylesheet" href="CSS\bootstrap.min.css">
+<script src="JavaScript\jquery.min.js"></script>
+<script src="JavaScript\bootstrap.min.js"></script> -->
+<script src="./js/postLoginoperation.js"></script>
+</head>
+<body style="background-image: radial-gradient(rgba(18, 44, 52, 1), rgba(62, 120, 178, 1), rgba(134, 203, 146, 1));">
+<!-- <body style="background-color: rgba(0, 167, 225, 1)">    -->
+	
+	<nav class="navbar navbar-expand-md  bg-dark">
+		<a class="navbar-brand logo-top font-weight-bold" href="BootStrapHome.html">University Of Phoenix</a>
+		<button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+		aria-expanded="false" aria-label="Toggle navigation">
+		<i class="fa fa-bars"></i>
+	</button>
+	<div class="collapse navbar-collapse text-center" id="collapsibleNavId">
+		<ul class="navbar-nav mr-auto mt-lg-0 justify-content-center">
+			<li class="nav-item mx-1 my-2 my-md-0">
+				<a class="nav-link" href="BootStrapHome.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item mx-1 my-2 my-md-0">
+				<a class="nav-link" href="about.html">About</a>
+			</li>
+			<li class="nav-item active mx-1 my-2 my-md-0">
+				<a class="nav-link" href="gallery2.html">Gallery</a>
+			</li>
+			<li class="nav-item  mx-1 my-2 my-md-0">
+				<a class="nav-link" href="contact.html">Contact</a>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li class="nav-item mx-1 my-2 my-md-0"> <a href="login.html" class="nav-link px-2 mx-2" id="login">Login</a></li>
+			<li class="nav-item mx-1 my-2 my-md-0"> <a href="register.html" class="nav-link button-custom" id="sign-up">Sign-Up</a></li>
+		</ul>
+	</div>
+</nav>
+
+<br>
+<!-- pahila carousel start-->
+<!-- <div class="container  container-fluid"> -->
+	<div id="demo1" class="container carousel slide container-fluid" data-ride="carousel">
+		<div class="carousel-inner imageDesign">
+			<div class="carousel-item active">
+				<img src="Images\SportsEvents\Sports_001.jpg" alt="Sports">
+				<div class="carousel-caption">
+					<h10><b> -- Sports Club -- </b></h10>
+				</div>   
+			</div>
+			<div class="carousel-item">
+				<img src="Images\Festivals\Festival_001.jpg" alt="Festival">
+				<div class="carousel-caption">
+					<h10><b> -- Festival -- </b></h10>
+				</div>
+			</div>   
+			<div class="carousel-item">
+				<img src="Images\Library\Library_005.jpg" alt="Library">
+				<div class="carousel-caption">
+					<h10><b> -- Library -- </b></h10>
+				</div>   
+			</div>
+			<div class="carousel-item">
+				<img src="Images\Awardfunction\Awards_001.jpg" alt="Award Function">
+				<div class="carousel-caption">
+					<h10><b> -- Felicitation -- </b></h10>
+				</div>   
+			</div>
+			
+		</div>
+		<a class="carousel-control-prev" href="#demo1" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<a class="carousel-control-next" href="#demo1" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+	
+	
+	<div class="footer2 container-fluid">
+		
+		<div class="row">
+			<!--first column sposrts-->
+			<div class="col-sm-6 col-lg-3">
+				<div class="flip-box">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<img src="Images\SportsEvents\Sports_001.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor imageRow">
+							<b>Sports Section</b>
+						</div>
+						<div class="flip-box-back hover-shadow cursor"  onclick="openModal();currentSlide(1)">
+							<marquee direction="up" id="paraStyle" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="4">
+								
+								Welcome to Sports Section! It helps in maintaining the physical and mental fitness of the person. 
+								Playing sports on daily basis help in developing the mental skills. 
+								It also improves the psychological skills of the person playing. 
+								It brings motivation, courage, discipline and concentration.
+							</marquee>
+							<center><b>Sports Section</b></center>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--second column festival-->
+			<div class="col-sm-6 col-lg-3">
+				<div class="flip-box">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<img src="Images\Festivals\Festival_001.jpg"  onclick="openModal2();currentSlide2(1)" class="hover-shadow cursor imageRow">
+							<b>Festival</b>
+						</div>
+						<div class="flip-box-back hover-shadow cursor"  onclick="openModal2();currentSlide2(1)">
+							<marquee direction="up" id="paraStyle" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="4">
+								Zodiac is the biggest college festival in Pune.
+								It consists of technical as well as cultural festivals.
+							</marquee>
+							<center><b>Festival</b></center>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--third column library-->
+			<div class="col-sm-6 col-lg-3">
+				<div class="flip-box">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<img src="Images\Library\Library_005.jpg" onclick="openModal3();currentSlide3(1)" class="hover-shadow cursor imageRow">
+							<b>Library</b>
+						</div>
+						<div class="flip-box-back hover-shadow cursor"  onclick="openModal3();currentSlide3(1)">
+							<marquee direction="up" id="paraStyle" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="4">
+								Libraries are very important for the progress and development of a society. 
+								They are storehouse of knowledge. 
+								Libraries help to develop reading habits. 
+								They mould the character. They help in personality development.
+								Libraries are significant for a civil society. 
+								They contain books on various subjects ranging from history, science, fiction, literature, fashion, health and beauty. 
+								Books contain good thought. They ensure accessibility to vast ocean of knowledge to common man. 
+								There are people in every society who have craving for reading but have no money to satisfy their urge. 
+								Libraries are blessing for such people. The concept of the emergence of free libraries goes back to the knowledge craving of such people. 
+								In west such libraries are provided by the philanthropist people
+							</marquee>
+							<center><b>Library</b></center>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--fourth column awards-->
+			<div class="col-sm-6 col-lg-3">
+				<div class="flip-box">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<img src="Images\Awardfunction\Awards_001.jpg" onclick="openModal4();currentSlide4(1)" class="hover-shadow cursor imageRow">
+							<b>Felicitation</b>
+						</div>
+						<div class="flip-box-back hover-shadow cursor"  onclick="openModal4();currentSlide4(1)">
+							<marquee direction="up" id="paraStyle" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="4">
+								Felicitation distribution is one of the most important functions of a school. 
+								It is a memorable event in the history of the institution. 
+								It is held and marks the end of the academic year. 
+							</marquee>
+							<center><b>Felicitation</b></center>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--first section sposrts-->
+			<div id="myModal" class="modal2">
+				<span class="close2 cursor" onclick="closeModal()" style="width: 80px; height: 40px;">CLOSE</span>
+				<div class="modal-content2">
+					
+					<div class="mySlides">
+						<div class="numbertext">1 / 8</div>
+						<img src="Images\SportsEvents\Sports_001.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides">
+						<div class="numbertext">2 / 8</div>
+						<img src="Images\SportsEvents\Sports_002.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides">
+						<div class="numbertext">3 / 8</div>
+						<img src="Images\SportsEvents\Sports_003.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides">
+						<div class="numbertext">4 / 8</div>
+						<img src="Images\SportsEvents\Sports_005.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides">
+						<div class="numbertext">5 / 8</div>
+						<img src="Images\SportsEvents\Sports_006.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides">
+						<div class="numbertext">6 / 8</div>
+						<img src="Images\SportsEvents\Sports_004.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides">
+						<div class="numbertext">7 / 8</div>
+						<img src="Images\SportsEvents\Sports_007.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides">
+						<div class="numbertext">8 / 8</div>
+						<img src="Images\SportsEvents\Sports_008.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next2" onclick="plusSlides(1)">&#10095;</a>
+					
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+					
+					
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo cursor imageOfSection" src="Images\SportsEvents\Sports_001.jpg" style="width:100%" onclick="currentSlide(1)" alt="BASKET BALL">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo cursor imageOfSection" src="Images\SportsEvents\Sports_002.jpg" style="width:100%" onclick="currentSlide(2)" alt="RUGBY">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo cursor imageOfSection" src="Images\SportsEvents\Sports_003.jpg" style="width:100%" onclick="currentSlide(3)" alt="CRICKET">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo cursor imageOfSection" src="Images\SportsEvents\Sports_005.jpg" style="width:100%" onclick="currentSlide(4)" alt="KABADDI">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo cursor imageOfSection" src="Images\SportsEvents\Sports_006.jpg" style="width:100%" onclick="currentSlide(5)" alt="VOLLEY BALL">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo cursor imageOfSection" src="Images\SportsEvents\Sports_004.jpg" style="width:100%" onclick="currentSlide(6)" alt="CYCLING">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo cursor imageOfSection" src="Images\SportsEvents\Sports_007.jpg" style="width:100%" onclick="currentSlide(7)" alt="TABLE TENNIS">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo cursor imageOfSection" src="Images\SportsEvents\Sports_008.jpg" style="width:100%" onclick="currentSlide(8)" alt="SNOOKER">
+					</div>
+				</div>
+			</div>
+			
+			<!--second section festival-->
+			<div id="myModal2" class="modal2">
+				<span class="close2 cursor" onclick="closeModal2()" style="width: 80px; height: 40px;">CLOSE</span>
+				<div class="modal-content2">
+					
+					<div class="mySlides2">
+						<div class="numbertext">1 / 4</div>
+						<img src="Images\Festivals\Festival_001.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides2">
+						<div class="numbertext">2 / 4</div>
+						<img src="Images\Festivals\Festival_002.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides2">
+						<div class="numbertext">3 / 4</div>
+						<img src="Images\Festivals\Festival_003.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides2">
+						<div class="numbertext">4 / 4</div>
+						<img src="Images\Festivals\Festival_004.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					
+					<a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+					<a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+					
+					<div class="caption-container">
+						<p id="caption2"></p>
+					</div>
+					
+					
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo2 cursor imageOfSection" src="Images\Festivals\Festival_001.jpg" style="width:100%" onclick="currentSlide2(1)" alt="CULTURAL FESTIVAL">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo2 cursor imageOfSection" src="Images\Festivals\Festival_002.jpg" style="width:100%" onclick="currentSlide2(2)" alt="ANNUAL BASH">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo2 cursor imageOfSection" src="Images\Festivals\Festival_003.jpg" style="width:100%" onclick="currentSlide2(3)" alt="TECHNICAL FESTIVAL">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo2 cursor imageOfSection" src="Images\Festivals\Festival_004.jpg" style="width:100%" onclick="currentSlide2(4)" alt="GARBA">
+					</div>
+				</div>
+			</div>
+			
+			<!--third section library-->
+			<div id="myModal3" class="modal2">
+				<span class="close2 cursor" onclick="closeModal3()" style="width: 80px; height: 40px;">CLOSE</span>
+				<div class="modal-content2">
+					
+					<div class="mySlides3">
+						<div class="numbertext">1 / 4</div>
+						<img src="Images\Library\Library_005.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides3">
+						<div class="numbertext">2 / 4</div>
+						<img src="Images\Library\Library_0012.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides3">
+						<div class="numbertext">3 / 4</div>
+						<img src="Images\Library\Library_0013.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides3">
+						<div class="numbertext">4 / 4</div>
+						<img src="Images\Library\Library_0011.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<a class="prev2" onclick="plusSlides3(-1)">&#10094;</a>
+					<a class="next2" onclick="plusSlides3(1)">&#10095;</a>
+					
+					<div class="caption-container">
+						<p id="caption3"></p>
+					</div>
+					
+					
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo3 cursor imageOfSection" src="Images\Library\Library_005.jpg" style="width:100%" onclick="currentSlide3(1)" alt="LIBRARY">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo3 cursor imageOfSection" src="Images\Library\Library_0012.jpg" style="width:100%" onclick="currentSlide3(2)" alt="BOOKS STORAGE AROUND 5000">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo3 cursor imageOfSection" src="Images\Library\Library_0013.jpg" style="width:100%" onclick="currentSlide3(3)" alt="COMPUTER ROOM">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo3 cursor imageOfSection" src="Images\Library\Library_0011.jpg" style="width:100%" onclick="currentSlide3(4)" alt="GROUP STUDY ROOM">
+					</div>                       
+				</div>
+			</div>
+			
+			<!--fourth section awards-->
+			<div id="myModal4" class="modal2">
+				<span class="close2 cursor" onclick="closeModal4()" style="width: 80px; height: 40px;">CLOSE</span>
+				<div class="modal-content2">
+					
+					<div class="mySlides4">
+						<div class="numbertext">1 / 4</div>
+						<img src="Images\AwardFunction\Awards_001.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides4">
+						<div class="numbertext">2 / 4</div>
+						<img src="Images\AwardFunction\Awards_002.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides4">
+						<div class="numbertext">3 / 4</div>
+						<img src="Images\AwardFunction\Awards_005.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<div class="mySlides4">
+						<div class="numbertext">4 / 4</div>
+						<img src="Images\AwardFunction\Awards_004.jpg" style="width:100%" class="imageDisplay">
+					</div>
+					
+					<a class="prev2" onclick="plusSlides4(-1)">&#10094;</a>
+					<a class="next2" onclick="plusSlides4(1)">&#10095;</a>
+					
+					<div class="caption-container">
+						<p id="caption4"></p>
+					</div>
+					
+					
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo4 cursor imageOfSection" src="Images\AwardFunction\Awards_001.jpg" style="width:100%" onclick="currentSlide4(1)" alt="TOPPERS AWARD">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo4 cursor imageOfSection" src="Images\AwardFunction\Awards_002.jpg" style="width:100%" onclick="currentSlide4(2)" alt="BEST STUDENT AWARD GIRL">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo4 cursor imageOfSection" src="Images\AwardFunction\Awards_005.jpg" style="width:100%" onclick="currentSlide4(3)" alt="BEST STUDENT AWARD BOY">
+					</div>
+					<div class="column col-sm-6 col-lg-3">
+						<img class="demo4 cursor imageOfSection" src="Images\AwardFunction\Awards_004.jpg" style="width:100%" onclick="currentSlide4(4)" alt="BEST PROJECT AWARD">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<div class="container-fluid text-center text-md-left">			
+			<div class="row align-items-center">				
+				<div class="col-md-6 mt-md-2 my-3">				
+					<img src="./img/logowhite.png" alt="Logo">					
+				</div>		
+				<div class="col-md-3 px-2 text-center my-md-5">
+					<a href="#"><span class="fa fa-2x fa-facebook px-md-2 px-sm-3"></span></a>
+					<a href="#" class=" mx-md-1 mx-5"><span class="fa fa-2x fa-twitter px-md-2 px-sm-3"></span></a>
+					<a href="#"><span class="fa fa-2x fa-google px-md-2 px-sm-3"></span></a>
+				</div>
+				<hr class="clearfix d-md-none">				
+				<div class="col-md-3 text-right mb-md-0 mb-3">					
+					<h6 class="text-uppercase text-center mt-3">Sitemap</h6>		
+					<ul class="list-unstyled text-center">
+						<li>
+							<a class="text-center" href="BootStrapHome.html">Home</a>
+						</li>
+						<li>
+							<a class="text-center" href="about.html">About</a>
+						</li>
+						<li>
+							<a href="contact.html" class="text-center">Contact</a>
+						</li>
+						<li>
+							<a href="gallery2.html" class="text-center">Gallery</a>
+						</li>
+					</ul>			
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright text-center py-2">© 2018 Copyright:
+			<a href="BootStrapHome.html"> University Of Phoenix</a>
+		</div>
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	
+</body>
+</html>
